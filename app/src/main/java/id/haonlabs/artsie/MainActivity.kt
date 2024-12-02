@@ -1,5 +1,6 @@
 package id.haonlabs.artsie
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
@@ -45,7 +46,11 @@ class MainActivity : AppCompatActivity() {
     }
   }
 
+  @SuppressLint("Recycle")
   private fun getLatestArt(): ArrayList<Art> {
+    val dataName = resources.getStringArray(R.array.data_name)
+    val dataDesc = resources.getStringArray(R.array.data_desc)
+    val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
     val listLatest = ArrayList<Art>()
 
     listLatest.add(Art(photo = R.drawable.avatar, name = "tes", desc = "tes", artist = "tes 1"))

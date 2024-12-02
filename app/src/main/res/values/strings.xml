@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Artsie</string>
+    <string-array name="data_name">
+        <item>Monalisa</item>
+    </string-array>
+    <string-array name="data_desc">
+        <item>test</item>
+    </string-array>
+    <integer-array name="data_photo">
+        <item>@drawable/avatar</item>
+    </integer-array>
 </resources>
