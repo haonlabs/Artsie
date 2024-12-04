@@ -3,10 +3,13 @@
     <style name="Base.Theme.Artsie" parent="Theme.Material3.DayNight">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="android:windowSplashScreenBackground">@color/black</item>
-        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash</item>
-        <item name="android:windowSplashScreenAnimationDuration">3000</item>
     </style>
 
     <style name="Theme.Artsie" parent="Base.Theme.Artsie" />
+
+    <style name="SplashTheme" parent="Theme.SplashScreen.IconBackground">
+        <item name="windowSplashScreenBackground">@color/black</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash</item>
+        <item name="postSplashScreenTheme">@style/Theme.Artsie</item>
+    </style>
 </resources>
