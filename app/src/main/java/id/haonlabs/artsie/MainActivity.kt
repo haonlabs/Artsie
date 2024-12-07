@@ -1,9 +1,9 @@
 package id.haonlabs.artsie
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.TextView
@@ -48,19 +48,24 @@ class MainActivity : AppCompatActivity() {
     }
   }
 
+  @SuppressLint("Recycle")
   private fun getLatestArt(): ArrayList<Art> {
     val dataTitle = resources.getStringArray(R.array.data_title)
     val dataHistory = resources.getStringArray(R.array.data_history)
     val dataMaterials = resources.getStringArray(R.array.data_materials)
     val dataDimensions = resources.getStringArray(R.array.data_dimensions)
-    val dataPhoto = resources.getIntArray(R.array.data_photo)
+    val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
     val listLatest = ArrayList<Art>()
     for (i in dataTitle.indices) {
-      val photoId = if (i > 0) dataPhoto[i - 1] else 0 // Default to 0 or handle as needed
-      val art = Art(dataTitle[i], dataHistory[i], dataMaterials[i], dataDimensions[i], photoId)
+      val art =
+          Art(
+              dataTitle[i],
+              dataHistory[i],
+              dataMaterials[i],
+              dataDimensions[i],
+              dataPhoto.getResourceId(i, -1))
       listLatest.add(art)
     }
-    Log.i("sizeArt", "getLatestArt: ${listLatest.size}")
     return listLatest
   }
 
