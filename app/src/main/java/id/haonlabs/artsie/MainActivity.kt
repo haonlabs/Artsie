@@ -1,5 +1,6 @@
 package id.haonlabs.artsie
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
@@ -8,6 +9,7 @@ import android.view.MenuItem
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
@@ -22,6 +24,7 @@ class MainActivity : AppCompatActivity() {
   private val listArt = ArrayList<Art>()
 
   override fun onCreate(savedInstanceState: Bundle?) {
+    installSplashScreen()
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_main)
 
@@ -45,21 +48,30 @@ class MainActivity : AppCompatActivity() {
     }
   }
 
+  @SuppressLint("Recycle")
   private fun getLatestArt(): ArrayList<Art> {
+    val dataTitle = resources.getStringArray(R.array.data_title)
+    val dataHistory = resources.getStringArray(R.array.data_history)
+    val dataMaterials = resources.getStringArray(R.array.data_materials)
+    val dataDimensions = resources.getStringArray(R.array.data_dimensions)
+    val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
     val listLatest = ArrayList<Art>()
-
-    listLatest.add(Art(photo = R.drawable.avatar, name = "tes", desc = "tes", artist = "tes 1"))
-    listLatest.add(Art(photo = R.drawable.gurl, name = "tes", desc = "tes", artist = "tes 2"))
-    listLatest.add(Art(photo = R.drawable.haon, name = "tes", desc = "tes", artist = "tes 3"))
-    listLatest.add(Art(photo = R.drawable.avatar, name = "tes", desc = "tes", artist = "tes 4"))
-    listLatest.add(Art(photo = R.drawable.gurl, name = "tes", desc = "tes", artist = "tes 5"))
-
+    for (i in dataTitle.indices) {
+      val art =
+          Art(
+              dataTitle[i],
+              dataHistory[i],
+              dataMaterials[i],
+              dataDimensions[i],
+              dataPhoto.getResourceId(i, -1))
+      listLatest.add(art)
+    }
     return listLatest
   }
 
   private fun showRvPopular() {
     rvPopular.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-    val popularArtAdapter = PopularArtAdapter(listArt)
+    val popularArtAdapter = PopularArtAdapter(listArt.takeLast(4))
     rvPopular.adapter = popularArtAdapter
 
     popularArtAdapter.setOnItemClickCallback(
@@ -90,7 +102,7 @@ class MainActivity : AppCompatActivity() {
   }
 
   private fun showSelectedArt(art: Art) {
-    Toast.makeText(this, "Dibuat oleh ${art.artist}", Toast.LENGTH_SHORT).show()
+    Toast.makeText(this, "Memilih lukisan ${art.title}", Toast.LENGTH_SHORT).show()
   }
 
   override fun onCreateOptionsMenu(menu: Menu?): Boolean {

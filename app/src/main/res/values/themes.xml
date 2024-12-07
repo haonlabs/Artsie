@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.Artsie" parent="Base.Theme.Artsie" />
+
+    <style name="SplashTheme" parent="Theme.SplashScreen.IconBackground">
+        <item name="windowSplashScreenBackground">@color/black</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash</item>
+        <item name="postSplashScreenTheme">@style/Theme.Artsie</item>
+    </style>
 </resources>
