@@ -3,6 +3,7 @@ package id.haonlabs.artsie
 import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.TextView
@@ -48,17 +49,18 @@ class MainActivity : AppCompatActivity() {
   }
 
   private fun getLatestArt(): ArrayList<Art> {
-    val dataName = resources.getStringArray(R.array.data_name)
-    val dataDesc = resources.getStringArray(R.array.data_desc)
+    val dataTitle = resources.getStringArray(R.array.data_title)
+    val dataHistory = resources.getStringArray(R.array.data_history)
+    val dataMaterials = resources.getStringArray(R.array.data_materials)
+    val dataDimensions = resources.getStringArray(R.array.data_dimensions)
     val dataPhoto = resources.getIntArray(R.array.data_photo)
     val listLatest = ArrayList<Art>()
-
-    listLatest.add(Art(photo = R.drawable.avatar, name = "tes", desc = "tes", artist = "tes 1"))
-    listLatest.add(Art(photo = R.drawable.gurl, name = "tes", desc = "tes", artist = "tes 2"))
-    listLatest.add(Art(photo = R.drawable.haon, name = "tes", desc = "tes", artist = "tes 3"))
-    listLatest.add(Art(photo = R.drawable.avatar, name = "tes", desc = "tes", artist = "tes 4"))
-    listLatest.add(Art(photo = R.drawable.gurl, name = "tes", desc = "tes", artist = "tes 5"))
-
+    for (i in dataTitle.indices) {
+      val photoId = if (i > 0) dataPhoto[i - 1] else 0 // Default to 0 or handle as needed
+      val art = Art(dataTitle[i], dataHistory[i], dataMaterials[i], dataDimensions[i], photoId)
+      listLatest.add(art)
+    }
+    Log.i("sizeArt", "getLatestArt: ${listLatest.size}")
     return listLatest
   }
 
@@ -95,7 +97,7 @@ class MainActivity : AppCompatActivity() {
   }
 
   private fun showSelectedArt(art: Art) {
-    Toast.makeText(this, "Dibuat oleh ${art.artist}", Toast.LENGTH_SHORT).show()
+    Toast.makeText(this, "Memilih lukisan ${art.title}", Toast.LENGTH_SHORT).show()
   }
 
   override fun onCreateOptionsMenu(menu: Menu?): Boolean {

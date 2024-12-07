@@ -1,13 +1,104 @@
 <resources>
     <string name="app_name">Artsie</string>
-    <string-array name="data_name">
-        <item>Monalisa</item>
+    <string-array name="data_title">
+        <!--        <item>Portrait de Claude François Alby, enfant</item>-->
+        <!--        <item>Vénitienne</item>-->
+        <!--        <item>Ecce Homo ou Christ aux liens</item>-->
+        <!--        <item>La Vierge et l\'enfant</item>-->
+        <!--        <item>Saint François réconforté par un ange</item>-->
+        <!--        <item>Saint Augustin</item>-->
+        <!--        <item>Philippe IV en chasseur</item>-->
+        <!--        <item>Personnages dans des ruines</item>-->
+        <!--        <item>L\'Institution du Rosaire</item>-->
+        <!--        <item>Portrait équestre du marquis de Leganés</item>-->
+        <item>tes</item>
+        <item>tes</item>
+        <item>tes</item>
+        <!--        <item>tes</item>-->
+        <!--        <item>tes</item>-->
+        <!--        <item>tes</item>-->
+        <!--        <item>tes</item>-->
+        <!--        <item>tes</item>-->
+        <!--        <item>tes</item>-->
+        <!--        <item>tes</item>-->
     </string-array>
-    <string-array name="data_desc">
-        <item>test</item>
-        <item>test</item>
+    <string-array name="data_history">
+        <!--        <item>Probably commissioned by the parents of the model and painted in Marseille in 1827; probably collection of the model and inherited his daughter; collection of Mrs. Chièze, born Marie Françoise Alby (1856–1958), daughter of the model; given by the latter to the Louvre, in 1947; proposed for deposit at the Musée de Dôle (not made); deposited at the Musée de Castres (Tarn) by decree of 20 December 1947</item>-->
+        <!--        <item>Acquired by national museums in 1948 at the Schmit Gallery, with the 1948 RF 8.\-->
+        <!--Submitted by the Louvre in Castres, Musée Goya.\-->
+        <!--Work sent to Castres on 5 May 1948 (3 DD 24-Book of movements No. 2 Paintings 1911-1952 / page 390)\-->
+        <!--Barbault painted several times figures of \"Costumes of Italy\". A first series of twelve figures is documented by a letter of 10 November by Jean-François de Troy, director of the Académie de France in Rome in Vandières, future Marquis de Marigny (\"Correspondance of the directors of the Académie de France in Rome with the Superintendents of Buildings\", published by A. de Montaiglon and J. Guiffrey, Paris, volume X, 1900, p. 3. 332.\-->
+        <!--Ten figures are also included in the after-death inventory of Soufflot of 20 November 1780, No. 9.\-->
+        <!--In 1862, Léon Gaucherel grave and published the \"Twelve Costumes of Italy after the paintings made by Barbault in Rome in 1750\". According to Paul Mantz, these paintings belonged to the engraver and had dates between 1749 and 1752 (P. Mantz, \"Jean Barbault\", La chronique des Arts et de la Curiosité, 15 March 1863, p. 158).\-->
+        <!--The Gentleman of Castres (RF 1948 8) having the date of 1755 or 1759 (last digit diffincedly readable), this would encourage the two paintings of another series to be believed.\-->
+        <!--Bagged by Brigitte Arbus at the C2RMF in Flore in March 2010.\-->
+        <!--Seen at the C2RMF (Flore) on 09/04/2010 (visit from the Department of Paintings).\-->
+        <!--</item>-->
+        <!--        <item>Done by Pierre Evariste Villemant at the Louvre Museum, 1950; deposited at the Musée Goya de Castres, in 1950.</item>-->
+        <!--        <item>Reported from Spain by the Neapolitan Langlois; Paris, sale Randon de Boisset, 27 February 1777, No. 12; Paris, sale of the Count of Vaudreuil, 24 November 1784, No. 13; acquired by Louis XVI for 9001 books; exhibited at the Muséum Central des Arts from 1793; deposited at the Musée Goya de Castres, 1949.</item>-->
+        <!--        <item>Acquis of Miss Georges in 1953; deposited at the Musée Goya de Castres in 1954.</item>-->
+        <!--        <item>Retained in Le Havre by the D.M.F at the time of being shipped to the United States, entered the Louvre in 1952; deposited at the Musée Goya de Castres in 1963.</item>-->
+        <!--        <item>Madrid, Leganés collection, then Altamira, before 1642 (-1808?) ; Paris, anonymous sale, 28 April 1819, No. 116; sale Lapeyrière, 19 April 1825, No. 61 (7500F); Delahante collection; London, sale Pourtalès, Phillips, 19 May 1826, No. 167 (pounds sterling), withdrawn; London, sale Phillips, 8 and 9 May 1828, No. 101 (300 pounds sterling); acquired by the Louvre Museumin 1949.</item>-->
+        <!--        <item>During MNR 311.\-->
+        <!--The painting was acquired on 11 February 1942 by M. de Starranouing, in Paris, by Maria Dietrich, who sold it at the Linz Museum of 7 000 RM in April 1942; it was inventoried there under the number 2237 (1); during the German debacle, the painting was sheltered in Aussee; it was listed there under the number 5056; it was transported to the Central Collecting Point in Frankfurt.the fourteenth convoy from Munich on 30 October 1946 to the seat of the artistic recovery commission; it was selected at the fourth commission of choice of artistic recovery works on 21 December 1949; the painting was attributed to the Louvre (Department of Paintings) by the Office of Private Property and Interests in 1950 (\"Pannini\"), then deposited at the Musée des Beaux-Arts Denys Puech in 1952.\-->
+        <!--(1)Bundesarchiv BAK B323/570; Bundesarchiv BAK B323/618 and B323/663: \"Property Card\"; the \"Property Card Art\" of the Munich Central Collecting Point also states: 800 RM; is this the purchase price by Maria Dietrich?\-->
+        <!--(2)SMF, subdirectorate of collections, file Recovery: Arrest of the Ministry of National Education of 9 March 1952.</item>-->
+        <!--        <item>Collection of Prince Anatole Bariatinsky; Paris, collection of Baron Basil de Schlichting (1857–1914); bequests at the Louvre Museum, 1914 (\"Furillo School\"); deposited at the Musée de Castres, 1958.</item>-->
+        <!--        <item>Collection of the Marquis of Leganés, then Philip IV of Spain and Queen Isabella of Spain; donated by the latter to her sister-in-law, the Princess of Moscoso and Bourbon, Infante of Spain, at the time of her marriage to the Duke of Bauffremont; collection Duke of Bauffremont. The work is in the hands of Madame Henley, Paris, in 1935 (historic according to cat. exp. Brussels, 1935).\-->
+        <!--The painting was purchased on 17 March 1943 from Madame de Horne, Paris, 1,500,000 F by the Linz Museum (1).\-->
+        <!--It is registered at the Central Collecting Point in Munich under No. 11140/2.\-->
+        <!--The painting is given to the Louvre (Department of Paintings) by the Office of Private Property and Interests in 1950 (2); it was deposited at the Musée Goya de Castres in 1955, then in 1958 (3).\-->
+        <!--(1)Bundesarchiv, BAK B323/565.\-->
+        <!--(2)SMF, subdirectorate of collections, case Recovery: Arrest of the Ministry of National Education on 16 May 1951.\-->
+        <!--(3)SMF, subdirectorate of collections, file Recovery: Order of the Ministry of State for Cultural Affairs of 17 October 1958.</item>-->
+        <item>tes</item>
+        <item>tes</item>
+        <item>tes</item>
+        <!--        <item>tes</item>-->
+        <!--        <item>tes</item>-->
+        <!--        <item>tes</item>-->
+        <!--        <item>tes</item>-->
+        <!--        <item>tes</item>-->
+        <!--        <item>tes</item>-->
+        <!--        <item>tes</item>-->
+    </string-array>
+    <string-array name="data_materials">
+        <item>oil on canvas</item>
+        <item>canvas</item>
+        <item>wood</item>
+        <!--        <item>canvas</item>-->
+        <!--        <item>canvas</item>-->
+        <!--        <item>canvas</item>-->
+        <!--        <item>canvas</item>-->
+        <!--        <item>canvas</item>-->
+        <!--        <item>canvas</item>-->
+        <!--        <item>canvas</item>-->
+    </string-array>
+    <string-array name="data_dimensions">
+        <item>Height: 0.515 m; Width: 0.435 m</item>
+        <item>Height: 0.24 m; Width: 0.18 m</item>
+        <item>Height: 0.67 m; Width: 0.51 m</item>
+        <!--        <item>Height: 1.66 m; Width: 1.25 m</item>-->
+        <!--        <item>Height: 1.18 m; Width: 1.97 m</item>-->
+        <!--        <item>Height: 1.26 m; Width: 1 m</item>-->
+        <!--        <item>Height: 2 m; Width: 1.2 m</item>-->
+        <!--        <item>Height: 0.67 m; Height with accessory: 0.82 m; Width with accessory: 1.31 m; Width: 1.11 m</item>-->
+        <!--        <item>Height: 1.11 m; Width: 0.99 m</item>-->
+        <!--        <item>Height: 2.75 m; Width: 2.38 m</item>-->
     </string-array>
     <integer-array name="data_photo">
-        <item>@drawable/avatar</item>
+        <item>@drawable/elf</item>
+        <item>@drawable/elf</item>
+        <item>@drawable/elf</item>
+
+        <!--        <item>@drawable/img_2</item>-->
+        <!--        <item>@drawable/img_3</item>-->
+        <!--        <item>@drawable/img_4</item>-->
+        <!--        <item>@drawable/img_5</item>-->
+        <!--        <item>@drawable/img_6</item>-->
+        <!--        <item>@drawable/img_7</item>-->
+        <!--        <item>@drawable/img_8</item>-->
+        <!--        <item>@drawable/img_9</item>-->
+        <!--        <item>@drawable/img_10</item>-->
     </integer-array>
 </resources>

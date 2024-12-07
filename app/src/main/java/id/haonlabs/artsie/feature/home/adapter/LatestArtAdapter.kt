@@ -27,7 +27,7 @@ class LatestArtAdapter(private val listArt: ArrayList<Art>) :
   }
 
   override fun onBindViewHolder(holder: ListArtViewHolder, position: Int) {
-    val (name, desc, artist, photo) = listArt[position]
+    val (title, history, materials, dimensions, photo) = listArt[position]
     holder.imgPhoto.setImageResource(photo)
     //    holder.itemView.setOnClickListener {
     //      Toast.makeText(

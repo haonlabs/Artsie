@@ -39,9 +39,9 @@ class DetailActivity : AppCompatActivity() {
 
     if (data != null) {
       photo.setImageResource(data.photo)
-      name.text = data.name
-      desc.text = data.desc
-      artist.text = "Artist: ${data.artist}"
+      name.text = data.title
+      desc.text = data.history
+      artist.text = "Materials: ${data.materials}"
     }
   }
 }
