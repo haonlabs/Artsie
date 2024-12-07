@@ -10,4 +10,8 @@
         android:id="@+id/action_list"
         android:title="List"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_profile"
+        android:icon="@drawable/ic_action_person"
+        app:showAsAction="always" />
 </menu>
