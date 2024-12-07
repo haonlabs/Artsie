@@ -6,7 +6,6 @@ import android.util.Log
 import android.view.MenuItem
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import id.haonlabs.artsie.R
 import id.haonlabs.artsie.feature.home.model.Art
@@ -14,11 +13,9 @@ import id.haonlabs.artsie.feature.home.model.Art
 class DetailActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    enableEdgeToEdge()
     setContentView(R.layout.activity_detail)
     supportActionBar?.setDisplayHomeAsUpEnabled(true)
     supportActionBar?.title = "Detail"
-    setTheme(R.style.Theme_Artsie)
     val data =
         if (Build.VERSION.SDK_INT >= 33) {
           intent.getParcelableExtra<Art>("DATA", Art::class.java)

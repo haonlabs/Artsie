@@ -17,6 +17,7 @@ import id.haonlabs.artsie.feature.home.adapter.LatestArtAdapter
 import id.haonlabs.artsie.feature.home.adapter.PopularArtAdapter
 import id.haonlabs.artsie.feature.home.model.Art
 import id.haonlabs.artsie.feature.home.ui.DetailActivity
+import id.haonlabs.artsie.feature.profile.Profile
 
 class MainActivity : AppCompatActivity() {
   private lateinit var rvLatest: RecyclerView
@@ -118,6 +119,11 @@ class MainActivity : AppCompatActivity() {
 
       R.id.action_list -> {
         rvLatest.layoutManager = LinearLayoutManager(this)
+      }
+
+      R.id.action_profile -> {
+        val intentToProfile = Intent(this@MainActivity, Profile::class.java)
+        startActivity(intentToProfile)
       }
     }
     return super.onOptionsItemSelected(item)
