@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
 
   private fun showRvPopular() {
     rvPopular.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-    val popularArtAdapter = PopularArtAdapter(listArt)
+    val popularArtAdapter = PopularArtAdapter(listArt.takeLast(4))
     rvPopular.adapter = popularArtAdapter
 
     popularArtAdapter.setOnItemClickCallback(

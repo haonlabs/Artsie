@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import id.haonlabs.artsie.R
 import id.haonlabs.artsie.feature.home.model.Art
@@ -17,6 +18,7 @@ class LatestArtAdapter(private val listArt: ArrayList<Art>) :
   }
 
   class ListArtViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    val tvTitle: TextView = itemView.findViewById(R.id.tv_stage_title)
     val imgPhoto: ImageView = itemView.findViewById(R.id.iv_card_item_photo)
   }
 
@@ -28,6 +30,7 @@ class LatestArtAdapter(private val listArt: ArrayList<Art>) :
 
   override fun onBindViewHolder(holder: ListArtViewHolder, position: Int) {
     val (title, history, materials, dimensions, photo) = listArt[position]
+    holder.tvTitle.text = title
     holder.imgPhoto.setImageResource(photo)
     //    holder.itemView.setOnClickListener {
     //      Toast.makeText(
