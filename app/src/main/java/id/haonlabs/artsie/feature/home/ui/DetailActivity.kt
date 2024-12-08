@@ -1,9 +1,11 @@
 package id.haonlabs.artsie.feature.home.ui
 
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -30,6 +32,7 @@ class DetailActivity : AppCompatActivity() {
     val materials: TextView = findViewById(R.id.tv_materials)
     val dimensions: TextView = findViewById(R.id.tv_dimensions)
     val history: TextView = findViewById(R.id.tv_history)
+    val btnShare: Button = findViewById(R.id.btn_share)
 
     if (data != null) {
       photo.setImageResource(data.photo)
@@ -37,6 +40,25 @@ class DetailActivity : AppCompatActivity() {
       materials.text = data.materials
       dimensions.text = data.dimensions
       history.text = data.history
+    }
+
+    btnShare.setOnClickListener {
+      val shareIntent =
+          Intent().apply {
+            action = Intent.ACTION_SEND
+            putExtra(
+                Intent.EXTRA_TEXT,
+                """
+                        You must watch this Art!
+                        Title: ${data?.title}
+                        """
+                    .trimIndent(),
+            ) // Add the text to share
+            type = "text/plain" // Specify the type of content
+          }
+
+      // Start the sharing activity
+      startActivity(Intent.createChooser(shareIntent, "Share with: "))
     }
   }
 
