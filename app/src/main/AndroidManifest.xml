@@ -19,6 +19,13 @@
             android:name=".feature.home.ui.DetailActivity"
             android:exported="false" />
         <activity
+            android:name=".feature.home.ui.Home"
+            android:exported="false" />
+        <activity
+            android:name=".feature.splash.Splash"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/SplashTheme">
