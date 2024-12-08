@@ -14,5 +14,6 @@ class MainActivity : AppCompatActivity() {
     setContentView(R.layout.activity_main)
     val toSplash = Intent(this@MainActivity, Splash::class.java)
     startActivity(toSplash)
+    finish()
   }
 }
