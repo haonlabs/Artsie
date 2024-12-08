@@ -8,60 +8,28 @@
             android:viewportHeight="432">
             <group android:name="_R_G">
                 <group
-                    android:name="_R_G_L_2_G"
-                    android:translateX="179"
-                    android:translateY="213">
-                    <path
-                        android:name="_R_G_L_2_G_D_0_P_0"
-                        android:fillAlpha="1"
-                        android:fillColor="#0000ff"
-                        android:fillType="nonZero"
-                        android:pathData=" M22 0 C22,0 22,21 22,21 C22,21 2,21 2,21 C2,21 2,0 2,0 C2,0 22,0 22,0c " />
-                    <path
-                        android:name="_R_G_L_2_G_D_1_P_0"
-                        android:pathData=" M22 0 C22,0 22,21 22,21 C22,21 2,21 2,21 C2,21 2,0 2,0 C2,0 22,0 22,0c "
-                        android:strokeWidth="2"
-                        android:strokeAlpha="1"
-                        android:strokeColor="#ffffff"
-                        android:strokeLineCap="round"
-                        android:strokeLineJoin="round" />
-                </group>
-                <group
                     android:name="_R_G_L_1_G"
                     android:translateX="216"
                     android:translateY="216">
                     <path
                         android:name="_R_G_L_1_G_D_0_P_0"
-                        android:fillAlpha="1"
-                        android:fillColor="#ca4a62"
-                        android:fillType="nonZero"
-                        android:pathData=" M22 0 C22,0 22,18 22,18 C22,18 2,18 2,18 C2,18 2,0 2,0 C2,0 22,0 22,0c " />
-                    <path
-                        android:name="_R_G_L_1_G_D_1_P_0"
-                        android:pathData=" M22 0 C22,0 22,18 22,18 C22,18 2,18 2,18 C2,18 2,0 2,0 C2,0 22,0 22,0c "
+                        android:pathData=" M-1.25 -43 C-1.25,-43 -9.5,-41.5 -9.5,-41.5 C-9.5,-41.5 -19.25,-36.25 -19.25,-36.25 C-19.25,-36.25 -25.5,-29 -25.5,-29 C-25.5,-29 -34.5,-13.75 -34.5,-13.75 C-34.5,-13.75 -40.75,-3.75 -40.75,-3.75 C-40.75,-3.75 -44,6.25 -44,6.25 C-44,6.25 -44.25,17.5 -44.25,17.5 C-44.25,17.5 -40.25,29.5 -40.25,29.5 C-40.25,29.5 -32,37.75 -32,37.75 C-32,37.75 -21.75,42.75 -21.75,42.75 C-21.75,42.75 20.25,42.75 20.25,42.75 C20.25,42.75 26.25,39.75 26.25,39.75 C26.25,39.75 34.75,35.25 34.75,35.25 C34.75,35.25 40,27.25 40,27.25 C40,27.25 44,18.5 44,18.5 C44,18.5 44.75,9.75 44.75,9.75 C44.75,9.75 42.25,-1.25 42.25,-1.25 C42.25,-1.25 36,-10.75 36,-10.75 C36,-10.75 30.75,-19.75 30.75,-19.75 C30.75,-19.75 25.75,-28.25 25.75,-28.25 C25.75,-28.25 20.5,-34.75 20.5,-34.75 C20.5,-34.75 10,-41.75 10,-41.75 C10,-41.75 -1.25,-43 -1.25,-43c "
                         android:strokeWidth="2"
                         android:strokeAlpha="1"
-                        android:strokeColor="#ffffff"
+                        android:strokeColor="#000000"
                         android:strokeLineCap="round"
                         android:strokeLineJoin="round" />
                 </group>
                 <group
                     android:name="_R_G_L_0_G"
-                    android:scaleY="1.06383"
-                    android:translateX="214"
-                    android:translateY="204">
+                    android:translateX="214.5"
+                    android:translateY="216.5">
                     <path
                         android:name="_R_G_L_0_G_D_0_P_0"
-                        android:fillAlpha="1"
-                        android:fillColor="#ffffff"
-                        android:fillType="nonZero"
-                        android:pathData=" M22 47 C22,47 22,50 22,50 C22,50 -32,50 -32,50 C-32,50 -32,47 -32,47 C-32,47 22,47 22,47c " />
-                    <path
-                        android:name="_R_G_L_0_G_D_1_P_0"
-                        android:pathData=" M22 47 C22,47 22,50 22,50 C22,50 -32,50 -32,50 C-32,50 -32,47 -32,47 C-32,47 22,47 22,47c "
+                        android:pathData=" M-1.25 -43 C-1.25,-43 -9.5,-41.5 -9.5,-41.5 C-9.5,-41.5 -19.25,-36.25 -19.25,-36.25 C-19.25,-36.25 -25.5,-29 -25.5,-29 C-25.5,-29 -34.5,-13.75 -34.5,-13.75 C-34.5,-13.75 -40.75,-3.75 -40.75,-3.75 C-40.75,-3.75 -44,6.25 -44,6.25 C-44,6.25 -44.25,17.5 -44.25,17.5 C-44.25,17.5 -40.25,29.5 -40.25,29.5 C-40.25,29.5 -32,37.75 -32,37.75 C-32,37.75 -21.75,42.75 -21.75,42.75 C-21.75,42.75 20.25,42.75 20.25,42.75 C20.25,42.75 26.25,39.75 26.25,39.75 C26.25,39.75 34.75,35.25 34.75,35.25 C34.75,35.25 40,27.25 40,27.25 C40,27.25 44,18.5 44,18.5 C44,18.5 44.75,9.75 44.75,9.75 C44.75,9.75 42.25,-1.25 42.25,-1.25 C42.25,-1.25 36,-10.75 36,-10.75 C36,-10.75 30.75,-19.75 30.75,-19.75 C30.75,-19.75 25.75,-28.25 25.75,-28.25 C25.75,-28.25 20.5,-34.75 20.5,-34.75 C20.5,-34.75 10,-41.75 10,-41.75 C10,-41.75 -1.25,-43 -1.25,-43c "
                         android:strokeWidth="2"
                         android:strokeAlpha="1"
-                        android:strokeColor="#ffffff"
+                        android:strokeColor="#000000"
                         android:strokeLineCap="round"
                         android:strokeLineJoin="round" />
                 </group>
@@ -69,40 +37,12 @@
             <group android:name="time_group" />
         </vector>
     </aapt:attr>
-    <target android:name="_R_G_L_1_G">
-        <aapt:attr name="android:animation">
-            <set android:ordering="together">
-                <objectAnimator
-                    android:duration="483"
-                    android:pathData="M 216,216C 216,216 213,172 213,172"
-                    android:propertyName="translateXY"
-                    android:propertyXName="translateX"
-                    android:propertyYName="translateY"
-                    android:startOffset="0">
-                    <aapt:attr name="android:interpolator">
-                        <pathInterpolator android:pathData="M 0.0,0.0 c0.167,0.167 0.833,0.833 1.0,1.0" />
-                    </aapt:attr>
-                </objectAnimator>
-                <objectAnimator
-                    android:duration="517"
-                    android:pathData="M 213,172C 213,172 145,214 145,214"
-                    android:propertyName="translateXY"
-                    android:propertyXName="translateX"
-                    android:propertyYName="translateY"
-                    android:startOffset="483">
-                    <aapt:attr name="android:interpolator">
-                        <pathInterpolator android:pathData="M 0.0,0.0 c0.167,0.167 0.833,0.833 1.0,1.0" />
-                    </aapt:attr>
-                </objectAnimator>
-            </set>
-        </aapt:attr>
-    </target>
     <target android:name="_R_G_L_0_G">
         <aapt:attr name="android:animation">
             <set android:ordering="together">
                 <objectAnimator
                     android:duration="1000"
-                    android:pathData="M 214,204C 214,204 179,204 179,204"
+                    android:pathData="M 214.5,216.5C 214.5,216.5 238.5,226.5 238.5,226.5"
                     android:propertyName="translateXY"
                     android:propertyXName="translateX"
                     android:propertyYName="translateY"
@@ -118,7 +58,7 @@
         <aapt:attr name="android:animation">
             <set android:ordering="together">
                 <objectAnimator
-                    android:duration="3000"
+                    android:duration="1000"
                     android:propertyName="translateX"
                     android:startOffset="0"
                     android:valueFrom="0"
